@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IPadExpertUISwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UK-tf-nFK">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_logo" translatesAutoresizingMaskIntoConstraints="NO" id="YuD-cD-QfA">
+                                        <rect key="frame" x="128.5" y="377.5" width="511" height="269"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="511" id="CEA-4h-VYv"/>
+                                            <constraint firstAttribute="height" constant="269" id="NSZ-6j-ad5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YuD-cD-QfA" firstAttribute="centerY" secondItem="5UK-tf-nFK" secondAttribute="centerY" id="L6S-2d-TdV"/>
+                                    <constraint firstItem="YuD-cD-QfA" firstAttribute="centerX" secondItem="5UK-tf-nFK" secondAttribute="centerX" id="Qli-QT-zsj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5UK-tf-nFK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7iw-GR-eu1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5UK-tf-nFK" secondAttribute="bottom" id="Ri3-rm-IRg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5UK-tf-nFK" secondAttribute="trailing" id="qf5-oR-fzL"/>
+                            <constraint firstItem="5UK-tf-nFK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yBJ-vi-XtT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewMain" destination="5UK-tf-nFK" id="7J7-cd-DKK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106.25" y="-10.546875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_logo" width="511" height="269"/>
+    </resources>
+</document>
